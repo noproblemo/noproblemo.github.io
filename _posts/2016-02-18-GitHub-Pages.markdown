@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 이렇게 좋은걸 어떻게 말로 해야 할지
 ---
 
