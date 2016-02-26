@@ -19,7 +19,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-pygments: true
 
 kramdown:
   auto_ids:       true
@@ -28,6 +27,8 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  input: GFM
+  syntax_highlighter: rouge
 
   coderay:
     coderay_wrap:              div

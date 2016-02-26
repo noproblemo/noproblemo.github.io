@@ -32,7 +32,7 @@ cloneWithRowsAndSections(
 미치게 만든다.  
 만으로 2틀 만에 우연히 검색하다 알게 [typescript](http://www.typescriptlang.org/) 되었지만, 알고 보니 더 짜증이 난다.  
 
-아.. 짜증나..
+아.. 짜증나...
 
 
 
