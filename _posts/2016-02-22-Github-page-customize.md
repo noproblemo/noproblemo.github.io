@@ -32,7 +32,8 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
 2. **Comments Plugin Code Generator** 섹션에 있는 `Get code`를 클릭.  
     ![Get Code](/img/plugin_Get_code.png)
 3. *앱ID*에서 생성한 app을 선택한다. 
-4. 첫 번째 코드 블럭을 카피한다. 
+4. 첫 번째 코드 블럭을 카피한다.
+ 
 ~~~javascript
         <div id="fb-root"></div>
 <script>(function(d, s, id) {
