@@ -65,5 +65,6 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
 ## 참고 페이지
 
 1. [Boxer's Frontend](http://boxersb.github.io/etc/2013/04/03/jekyll-introduction/)
+2. [How I Created a Beautiful and Minimal Blog Using Jekyll, Github Pages, and poole](http://joshualande.com/jekyll-github-pages-poole/)
 
 
