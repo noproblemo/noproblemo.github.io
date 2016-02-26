@@ -4,6 +4,9 @@
   {% include head.html %}
 
   <body>
+
+    {% include header.html %}
+
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -21,8 +24,6 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    {% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
