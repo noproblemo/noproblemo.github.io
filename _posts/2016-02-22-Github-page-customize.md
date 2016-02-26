@@ -34,6 +34,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
 3. *앱ID*에서 생성한 app을 선택한다. 
 4. 첫 번째 코드 블럭을 카피한다.
 
+~~~javascript 
     <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -42,6 +43,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
   js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=224630587608504";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+~~~
     
 
 #### Github page 작업  
@@ -52,12 +54,13 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
 1. `_layouts/default.html` 파일에서 `<body>` 안에 카피한 코드 블럭을 추가.
 2. `_includes/head.html` 파일에 `<meta property="fb:app_id" content="{앱ID}" />` 를 추가. ({앱ID}는 카피한 코드 블럭의 `js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=224630587608504"` 를 참고. )
 3. `_layouts/post.html`의 `</article>`바로 위에 아래의 코드를 추가.
-        ~~~html
+
+~~~html
         <hr/>
     <h3>Comments</h3>
     <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-num-posts="5"></div> 
 </article>
-        ~~~
+~~~
 
 ## 참고 페이지
 
