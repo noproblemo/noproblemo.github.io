@@ -1,6 +1,7 @@
 ---
 layout: post
 title: typeScript
+comments:yes
 ---
 
 # typeScript
