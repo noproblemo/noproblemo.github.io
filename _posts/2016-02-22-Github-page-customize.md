@@ -52,7 +52,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
  Jekyll의 대충 구조를 참고하고, [Facebook Comments and Jekyll](https://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/)과 [Using-facebook comments with Jekyll](https://projectchilli.com/blog/2012/02/01/using-facebook-comments-with-jekyll/) 을 참고 하였다. 
 
 1. `_layouts/default.html` 파일에서 `<body>` 안에 카피한 코드 블럭을 추가.
-2. `_includes/head.html` 파일에 `<meta property="fb:app_id" content="{앱ID}" />` 를 추가. ({앱ID}는 카피한 코드 블럭의 `js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=224630587608504"` 를 참고. )
+2. `_includes/head.html` 파일에 `<meta property="fb:app_id" content="{앱ID}" />` 를 추가. (`{앱ID}`는 카피한 코드 블럭의 `js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=224630587608504"` 를 참고. )
 3. `_layouts/post.html`의 `</article>`바로 위에 아래의 코드를 추가.
 
 ~~~html
