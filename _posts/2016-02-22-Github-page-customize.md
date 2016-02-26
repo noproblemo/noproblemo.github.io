@@ -44,6 +44,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
         ~~~
+
 #### Github page 작업  
 
  작성한 post에서만 plugin를 연동할 생각이고, 난 아직 Jekyll 를 잘 알지 못한다.  
