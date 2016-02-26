@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Github page customize
+tags: [jekyll-bootstrap, facebook comments plugin]
 ---
 {% include JB/setup %}
 
