@@ -34,8 +34,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
 3. *앱ID*에서 생성한 app을 선택한다. 
 4. 첫 번째 코드 블럭을 카피한다.
 
-    ~~~javascript
-        <div id="fb-root"></div>
+    <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -43,7 +42,7 @@ Github page를 만들고 맘에 들었다가 이내 디자인이 맘에 걸려�
   js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=224630587608504";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-        ~~~
+    
 
 #### Github page 작업  
 
