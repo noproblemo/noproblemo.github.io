@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll에 Bootstrap 적용
-tagline: jekyll-bootstrap, facebook comments plugin
+tags: [jekyll-bootstrap, facebook comments plugin]
 ---
 {% include JB/setup %}
 
