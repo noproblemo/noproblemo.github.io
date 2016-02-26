@@ -8,8 +8,8 @@
 # Site settings
 title: To be professional
 email: me.noproblemo@gmail.com
-description: ""
-baseurl: "Learn Front and Back react and react native and jquery php" # the subpath of your site, e.g. /blog
+description: "Learn Front and Back react and react native and jquery php"
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://noproblemo.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  noproblemo
