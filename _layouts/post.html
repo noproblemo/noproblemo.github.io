@@ -1,6 +1,5 @@
 ---
 layout: default
-comments:yes
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -13,8 +12,6 @@ comments:yes
     {{ content }}
   </div>
 </article>
-{% if page.comments %}
-  <hr/>
-  <h2>Comments</h2>
-  <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>      
-{% endif %}
+<hr/>
+<h2>Comments</h2>
+<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>      
