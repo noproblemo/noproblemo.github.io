@@ -15,3 +15,5 @@ title: 이렇게 좋은걸 어떻게 말로 해야 할지
  * [jekyll](http://jekyllrb.com/docs/installation/), [jekll 한글](http://jekyllrb-ko.github.io/)
  * [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
  * [GitHub Pages](https://pages.github.com/)
+ * [Jekyll 과 Github Pages 로 블로깅](http://hj-lee.github.io/2013/04/05/jekyll-blogging/)
+ * [GitHub Page에 Jekyll Bootstrap 적용하기](http://sapzildj.github.io/etc/2015/08/10/Jekyll_Bootstrap/)
