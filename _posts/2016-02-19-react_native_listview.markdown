@@ -2,6 +2,7 @@
 layout: post
 title: ListView
 ---
+{% include JB/setup %}
 
 # ListView
 

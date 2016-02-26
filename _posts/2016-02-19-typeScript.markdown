@@ -2,6 +2,7 @@
 layout: post
 title: typeScript
 ---
+{% include JB/setup %}
 
 # typeScript
 
