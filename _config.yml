@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://noproblemo.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  noproblemo
+comments:yes
 
 # Build settings
 markdown: kramdown
