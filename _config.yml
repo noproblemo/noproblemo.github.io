@@ -10,7 +10,7 @@ highlighter: pygments
 #
 title: To be professional
 description: "Learn Front and Back react and react native and jquery php"
-url: "http://noproblemo.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 github_username:  noproblemo
 timezone:    Aisa/Seoul
 tagline: Site Tagline
