@@ -56,24 +56,19 @@
             <div class="phabricator-main-menu phabricator-main-menu-background">
                 <span>{{ site.title }}</span>
             </div>
-            <div id="phabricator-standard-page-body" class="phabricator-standard-page-body">
+            <div id="phabricator-standard-page-body" class="phabricator-standard-page-body">              
                 <div class="phui-crumbs-view phui-crumbs-border">
-                  <a href="/phame/" class="phui-crumb-view phui-crumb-has-icon">
+                {% if page.previous %}
+                  <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="phui-crumb-view phui-crumb-has-icon">
                     <span class="visual-only phui-icon-view phui-font-fa fa-star" aria-hidden="true"></span>
-                    <span class="phui-crumb-name"> Phame </span>
+                    <span class="phui-crumb-name"> {{ page.previous.title }} </span>
                   </a>
-                  <span class="visual-only phui-icon-view phui-font-fa fa-angle-right phui-crumb-divider phui-crumb-view" aria-hidden="true"></span>
-                  <a href="/phame/blog/" class="phui-crumb-view">
-                    <span class="phui-crumb-name"> Blogs </span>
-                  </a>
-                  <span class="visual-only phui-icon-view phui-font-fa fa-angle-right phui-crumb-divider phui-crumb-view" aria-hidden="true"></span>
-                  <a href="/phame/blog/view/112/" class="phui-crumb-view">
-                    <span class="phui-crumb-name"> High Horse Soapbox </span>
-                  </a>
+                {% else %}                  
                   <span class="visual-only phui-icon-view phui-font-fa fa-angle-right phui-crumb-divider phui-crumb-view" aria-hidden="true"></span>
                   <span class="phui-crumb-view phabricator-last-crumb">
-                    <span class="phui-crumb-name"> Advanced Internet Usage (Experts ONLY!) </span>
+                    <span class="phui-crumb-name"> {{ site.title }} </span>
                   </span>
+                {% endif %}
                 </div>
                 <div class="phui-document-container document-has-foot">
                   <div class="phui-document-view phui-document-view-pro">
