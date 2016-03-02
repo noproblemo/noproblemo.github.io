@@ -3,3 +3,25 @@
     border-bottom: 1px solid #DDE8EF;
     margin: 32px 0 16px
 }
+
+.phabricator-remarkup ul {
+	list-style: disc;
+    margin: 12px 0 12px 30px
+}
+
+.phabricator-remarkup ol {
+    list-style: decimal;
+    margin: 12px 0 12px 30px
+}
+
+.phabricator-remarkup ol ol {
+    list-style: upper-alpha
+}
+
+.phabricator-remarkup ol ol ol {
+    list-style: lower-alpha
+}
+
+.phabricator-remarkup ol ol ol ol {
+    list-style: lower-roman
+}
