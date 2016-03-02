@@ -54,22 +54,22 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-      var body = document.getElementsByTagName('body');
-      var OSName = "";
-      if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
-      if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
-      if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
-      if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
+      // var body = document.getElementsByTagName('body');
+      // var OSName = "";
+      // if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
+      // if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
+      // if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
+      // if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
 
-      body[0].setAttribute("class", body[0].getAttribute("class")+" "+OSName);
+      // body[0].setAttribute("class", body[0].getAttribute("class")+" "+OSName);
 
-      if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-        body[0].setAttribute("class", body[0].getAttribute("class")+" mobile");
-        // body[0].className += ' mobile';
-      } else {
-        body[0].setAttribute("class", body[0].getAttribute("class")+" device-desktop");
-          // body[0].className += ' device-desktop';                
-      }
+      // if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+      //   body[0].setAttribute("class", body[0].getAttribute("class")+" mobile");
+      //   // body[0].className += ' mobile';
+      // } else {
+      //   body[0].setAttribute("class", body[0].getAttribute("class")+" device-desktop");
+      //     // body[0].className += ' device-desktop';                
+      // }
     </script>
     <div id="main-page-frame">
         <div id="phabricator-standard-page" class="phabricator-standard-page">
