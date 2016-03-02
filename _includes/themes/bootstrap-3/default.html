@@ -36,16 +36,15 @@
     -->
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">    
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 </head>
 
 <body class="phui-theme-blindigo">
     <div id="fb-root"></div>
     <script type="text/javascript">
+    'use strict';
 
-      'use strict';
-
-      (function(d, s, id) {
+    (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s);
@@ -54,22 +53,22 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-      var body = document.getElementsByTagName('body');
-      var OSName = "";
-      if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
-      if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
-      if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
-      if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
+    var body = document.getElementsByTagName('body');
+    var OSName = "";
+    if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
+    if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
+    if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
+    if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
 
-      body[0].setAttribute("class", body[0].getAttribute("class")+" "+OSName);
+    body[0].setAttribute("class", body[0].getAttribute("class") + " " + OSName);
 
-      if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-        body[0].setAttribute("class", body[0].getAttribute("class")+" mobile");
+    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+        body[0].setAttribute("class", body[0].getAttribute("class") + " mobile");
         // body[0].className += ' mobile';
-      } else {
-        body[0].setAttribute("class", body[0].getAttribute("class")+" device-desktop");
-          // body[0].className += ' device-desktop';                
-      }
+    } else {
+        body[0].setAttribute("class", body[0].getAttribute("class") + " device-desktop");
+        // body[0].className += ' device-desktop';                
+    }
     </script>
     <div id="main-page-frame">
         <div id="phabricator-standard-page" class="phabricator-standard-page">
@@ -94,15 +93,14 @@
                 {{ content }}
                 <div class="phame-blog-description">
                 </div>
+                <div class="phabricator-standard-page-footer grouped">
+                    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+                    </p>
+                    <p>And apply Style <a href="https://secure.phabricator.com/book/phabricator/article/phame/" target="_blank">Phabricator Phame </a></p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="footer">
-        <div class="container">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
-            </p>
-        </div>
-    </div>    
     {% include JB/analytics %}
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
