@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ListView
+tags: [React, React Native]
+category: [React Native, Front-end, iOS]
 ---
 {% include JB/setup %}
-
-# ListView
 
  변경되는 데이터의 리스트를 효율적으로 세로로 스크롤될 수 있게 표현해준다.  
  마치 IOS Table View Controller와 같이.
