@@ -1,19 +1,35 @@
-<div class="phui-header-shell phui-header-tall ">
-  <div class="phui-header-view">
-    <div class="phui-header-row">
-      <div class="phui-header-col2">
-        <span class="phui-header-header">
-          {{ page.title }}
-        </span>
-        <div class="phui-header-subheader">
-          {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}  
+<div class="phui-document-container document-has-foot">
+    <div class="phui-document-view phui-document-view-pro">
+        <div class="phui-document-content">
+            <div class="phui-document-inner">
+                <div class="phui-header-shell phui-header-tall ">
+                    <div class="phui-header-view">
+                        <div class="phui-header-row">
+                            <div class="phui-header-col2">
+                                <span class="phui-header-header">
+                                  {{ page.title }}
+                                </span>
+                                <div class="phui-header-subheader">
+                                    {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
+                                </div>
+                            </div>
+                            <div class="phui-header-col3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phabricator-remarkup">
+	               {{ content }}	
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="phui-header-col3"></div>
     </div>
-  </div>
-</div>
-<div class="phabricator-remarkup">
-	{{ content }}	
+    <div class="phui-document-properties">
+        <div class="phui-property-list-section">
+            <div class="phui-property-list-container grouped">
+                <div class="phui-property-list-properties-wrap ">                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 

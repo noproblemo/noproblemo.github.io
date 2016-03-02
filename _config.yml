@@ -85,7 +85,7 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  #comments :
+  comments :
   #  provider : disqus
   #  disqus :
   #    short_name : jekyllbootstrap
@@ -93,11 +93,11 @@ JB :
   #    site_id : 123
   #  intensedebate :
   #    account : 123abc
-  #  facebook :
-  #    appid : 123
-  #    num_posts: 5
-  #    width: 580
-  #    colorscheme: light
+   facebook :
+     appid : 1557871931194431
+     num_posts: 5
+  #   width: 580
+     colorscheme: light
   #  duoshuo :
   #    short_name : jekyllbootstrap
    

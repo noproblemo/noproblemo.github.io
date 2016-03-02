@@ -67,3 +67,20 @@
 	height: auto;
     max-width: 100%
 }
+
+.phui-document-view.phui-document-view-pro,.phui-document-view-pro-box,.phui-document-properties {
+    max-width: 800px;
+    padding: 0 16px;
+    position: relative;
+    margin: 16px auto
+}
+.phui-document-properties {
+    max-width: 768px;
+    background-color: #F7F7F7;
+    margin: 16px auto;
+    border-radius: 3px
+}
+
+.phui-property-list-value {
+	list-style-type:none;
+}
