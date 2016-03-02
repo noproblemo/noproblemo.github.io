@@ -1,0 +1,5 @@
+.phabricator-remarkup h1, h2, h3, h4, h5, h6 {
+	padding: 0 24px 8px 0;
+    border-bottom: 1px solid #DDE8EF;
+    margin: 32px 0 16px
+}
