@@ -33,7 +33,7 @@
                         <dt class="phui-property-list-key">Blogger </dt>
                         <dd class="phui-property-list-value"><a href="/p/noproblemo/" class="phui-handle phui-link-person">noproblemo</a> </dd>
                         <dt class="phui-property-list-key">Published </dt>
-                        <dd class="phui-property-list-value">{{ page.date | date_to_long_string }}</dd>  
+                        <dd class="phui-property-list-value">{{ page.date | date: "%F" }}</dd>  
                         {% unless page.categories == empty %}                      
                         <dt class="phui-property-list-key">Categories </dt>
                         <dd class="phui-property-list-value"><em>{% assign categories_list = page.categories %} {% include JB/categories_list %}</em> </dd>
