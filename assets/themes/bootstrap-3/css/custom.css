@@ -25,3 +25,23 @@
 .phabricator-remarkup ol ol ol ol {
     list-style: lower-roman
 }
+
+.phui-document-content .phabricator-remarkup .highlight {
+    clear: both;
+    margin: 16px 0;
+    white-space: pre
+}
+
+.phui-document-content .phabricator-remarkup .highlight code {
+	font: 11px/16px "Menlo","Consolas","Monaco",monospace;
+
+}
+
+.phabricator-remarkup .code pre {
+    background: #FEF9ED;
+    border: 1px solid #e9dbcd;
+    display: block;
+    color: #000;
+    overflow: auto;
+    padding: 8px
+}
