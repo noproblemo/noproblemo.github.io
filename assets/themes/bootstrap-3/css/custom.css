@@ -26,6 +26,14 @@
     list-style: lower-roman
 }
 
+.phabricator-remarkup p code {
+    color: #000;
+    background: rgba(71,87,120,0.1);
+    padding: 1px 4px;
+    border-radius: 3px;
+    white-space: pre-wrap
+}
+
 .phui-document-content .phabricator-remarkup .highlight {
     clear: both;
     margin: 16px 0;
