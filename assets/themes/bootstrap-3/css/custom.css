@@ -53,3 +53,8 @@
     overflow: auto;
     padding: 8px
 }
+
+.phui-document-content .phabricator-remarkup img {
+	height: auto;
+    max-width: 100%
+}
