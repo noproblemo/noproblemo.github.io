@@ -26,7 +26,7 @@
     list-style: lower-roman
 }
 
-.phabricator-remarkup p,li code {
+.phabricator-remarkup p code {
     color: #000;
     background: rgba(71,87,120,0.1);
     padding: 1px 4px;
