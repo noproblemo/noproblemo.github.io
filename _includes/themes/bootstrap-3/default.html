@@ -55,7 +55,7 @@
         <div id="phabricator-standard-page" class="phabricator-standard-page">
             <div class="phabricator-main-menu phabricator-main-menu-background">
               <a class="phabricator-main-menu-brand" href="/">
-                <span>{{ site.title }}</span>                
+                <h3>{{ site.title }}</h3>                
               </a> 
             </div>
             <div id="phabricator-standard-page-body" class="phabricator-standard-page-body">              
@@ -71,15 +71,7 @@
                     <span class="phui-crumb-name"> {{ page.title }} </span>
                   </span>
                 </div>
-                <div class="phui-document-container document-has-foot">
-                  <div class="phui-document-view phui-document-view-pro">
-                    <div class="phui-document-content">
-                      <div class="phui-document-inner">
-                        {{ content }}                    
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {{ content }}
                 <div class="phame-blog-description">
                   
                 </div>
