@@ -54,22 +54,22 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-      // var body = document.getElementsByTagName('body');
-      // var OSName = "";
-      // if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
-      // if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
-      // if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
-      // if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
+      var body = document.getElementsByTagName('body');
+      var OSName = "";
+      if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
+      if (navigator.appVersion.indexOf("Mac") != -1) OSName = "mac";
+      if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
+      if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
 
-      // body[0].setAttribute("class", body[0].getAttribute("class")+" "+OSName);
+      body[0].setAttribute("class", body[0].getAttribute("class")+" "+OSName);
 
-      // if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-      //   body[0].setAttribute("class", body[0].getAttribute("class")+" mobile");
-      //   // body[0].className += ' mobile';
-      // } else {
-      //   body[0].setAttribute("class", body[0].getAttribute("class")+" device-desktop");
-      //     // body[0].className += ' device-desktop';                
-      // }
+      if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+        body[0].setAttribute("class", body[0].getAttribute("class")+" mobile");
+        // body[0].className += ' mobile';
+      } else {
+        body[0].setAttribute("class", body[0].getAttribute("class")+" device-desktop");
+          // body[0].className += ' device-desktop';                
+      }
     </script>
     <div id="main-page-frame">
         <div id="phabricator-standard-page" class="phabricator-standard-page">
@@ -102,8 +102,7 @@
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
             </p>
         </div>
-    </div>
-    <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-num-posts="5"></div>
+    </div>    
     {% include JB/analytics %}
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
