@@ -19,9 +19,6 @@ author :
   email : me.noproblemo@gmail.com
   github : noproblemo  
   timezone:    Aisa/Seoul
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
