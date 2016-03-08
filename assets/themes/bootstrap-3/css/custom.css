@@ -1,3 +1,14 @@
+body {
+    font: 13px 'Segoe UI','Segoe UI Web Regular','Segoe UI Symbol','Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Source Code Pro', ;
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: embed;
+    background: #f1f1f4;
+    -webkit-text-size-adjust: none;
+    overflow-y: scroll
+}
+
 .phabricator-main-menu-brand {	    
     color: #fff;
     margin:0 auto;    
