@@ -56,6 +56,9 @@ category: [Front-end]
 {% endraw %}
 
 ~~~
+ 3. 참고 
+    1. [Jekyll Date Formatting Examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
+    2. [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)  
     
 
 
