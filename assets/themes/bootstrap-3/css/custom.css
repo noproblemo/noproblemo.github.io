@@ -56,8 +56,7 @@ body {
 }
 
 .phui-document-content .phabricator-remarkup .highlight code {
-	font: 11px/16px "Menlo","Consolas","Monaco",monospace;
-    font-family: 'Source Code Pro' ;
+	font: 11px/16px 'Source Code Pro',"Menlo","Consolas","Monaco",monospace;
 }
 
 .phabricator-remarkup pre code {
