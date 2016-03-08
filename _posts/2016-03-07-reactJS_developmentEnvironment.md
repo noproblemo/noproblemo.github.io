@@ -54,6 +54,20 @@ $ npm install webpack --global
 $ npm install webpack --save-dev
 ~~~
 
+
+## 동강 시청
+이쯤에서 [Build Your First React.js App - egghead] 를 시청해보자.  
+텍스트로 쭈욱 보는 것이 **빠르다** 라고 생각할 것이지만, 항상 이제껏 그렇듯 **텍스트로 보는것은 기억력이 짧다**.  
+주요하게 보아할 것은, 
+
+1. 이제껏 설정한 것과 같은 과정을 거칠 것이며
+2. 짧은 예제들과 연동하는 부
+
+을 집중해서 보면 되겠다. 길지 않다. 약 8분 밖에 안된다. 
+
+
+ 
+
 ----
 [Getting Started - React]: https://facebook.github.io/react/docs/getting-started.html  "Getting Started"  
 [npm]: https://www.npmjs.com/  "node package manager"  
@@ -63,7 +77,7 @@ $ npm install webpack --save-dev
 [webpackKor]: http://yourakmoon.blogspot.kr/2015/06/react-js-hot-module-replacement-webpack.html  "React js 와 Hot Module Replacement 를 위한 Webpack 세팅"  
 [webpack 소개]: http://blog.hckrmn.net/2016/02/05/webpack-%EC%86%8C%EA%B0%9C/  "Webpack 소개"  
 [reactWithWebpack]: http://jslog.com/2014/10/02/react-with-webpack-part-1/  "React with webpack"  
-[egghead]: https://egghead.io/lessons/react-building-a-react-js-app-up-and-running-with-react-and-webpack "Build Your First React.js App"  
+[Build Your First React.js App - egghead]: https://egghead.io/lessons/react-building-a-react-js-app-up-and-running-with-react-and-webpack "Build Your First React.js App"  
 [Babelify]: http://easyreactbook.com/blog/react-fundamentals-configuring-browserify-babelify-and-react  "React Fundamentals: Configuring Browserify Babelify and React"  
 [syntaxError]: http://stackoverflow.com/questions/33460420/babel-loader-jsx-syntaxerror-unexpected-token  "babel-loader jsx SyntaxError: Unexpected token"
 
