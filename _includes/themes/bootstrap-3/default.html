@@ -125,7 +125,24 @@
          'text':{
             'headline':'{{ post.title }}',
             'text': '<a href="{{post.url}}">{{ post.title }}</a>'
-          }     
+          }
+          {% assign foundImage = 0 %}
+            {% assign images = post.content | split:"<img " %}     
+            {% for image in images %}
+                {% if image contains 'src' %}
+                    {% if foundImage == 0 %}
+                        {% assign html = image | split:" " | first %}
+                        {% assign img = html | split:"\"" | last %}
+                        {% assign src = img | split:"\"" | first %}
+                        {% assign src = src | split:"=" | last %}        ,
+        'media':{
+            'caption':'',
+            'url':{{src}}
+        },
+                    {% assign foundImage = 1 %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
         },
         {% endfor %}
         ];
