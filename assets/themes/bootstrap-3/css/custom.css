@@ -1,12 +1,7 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 body {
-    font: 13px 'Segoe UI','Segoe UI Web Regular','Segoe UI Symbol','Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-family: 'Source Code Pro' ;
-    direction: ltr;
-    text-align: left;
-    unicode-bidi: embed;
-    background: #f1f1f4;
-    -webkit-text-size-adjust: none;
-    overflow-y: scroll
+    font: 13px 'Noto Sans SC','Segoe UI','Segoe UI Web Regular','Segoe UI Symbol','Lato','Helvetica Neue',Helvetica,Arial,sans-serif;    
 }
 
 .phabricator-main-menu-brand {	    
@@ -62,7 +57,7 @@ body {
 
 .phui-document-content .phabricator-remarkup .highlight code {
 	font: 11px/16px "Menlo","Consolas","Monaco",monospace;
-
+    font-family: 'Source Code Pro' ;
 }
 
 .phabricator-remarkup pre code {
