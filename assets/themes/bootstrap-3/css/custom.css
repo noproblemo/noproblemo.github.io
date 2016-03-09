@@ -7,6 +7,7 @@ body {
 .phabricator-main-menu-brand {	    
     color: #fff;
     margin:0 auto;    
+    width:100%;
 }
 
 .phabricator-main-menu-brand h3 {
