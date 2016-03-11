@@ -169,6 +169,8 @@ module.exports = {
 }
 ~~~
 
+
+
 ## 참고할 만한 문서들
 
 1. [reactWithWebpack]
@@ -194,7 +196,9 @@ module.exports = {
 [webpackDocs]: https://github.com/webpack/docs/wiki/webpack-dev-server "webpack/docs"  
 [webpack Docs configuration]:https://github.com/webpack/docs/wiki/configuration "configuration"   
 [Developing with Webpack]: http://survivejs.com/webpack_react/developing_with_webpack/ "Developing with webpack"  
-[Using Webpack Hot Module Replacement with React]:http://matthewlehner.net/react-hot-module-replacement-with-webpack/ "Using Webpack Hot Module Replacement with React"
+[Using Webpack Hot Module Replacement with React]:http://matthewlehner.net/react-hot-module-replacement-with-webpack/ "Using Webpack Hot Module Replacement with React"  
+[code with github]: https://github.com/noproblemo/reactInit    "code with github"
+
 
 
 
