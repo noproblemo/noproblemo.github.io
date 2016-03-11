@@ -19,6 +19,7 @@ body {
     font-size:36px;
 	padding: 34px 24px 8px 0;
     border-bottom: 1px solid #DDE8EF;    
+    line-height: 120%
 }
 
 .phabricator-remarkup ul {
