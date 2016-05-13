@@ -5,6 +5,7 @@ category: [React Native, Front-end, iOS]
 ---
 
 # REACT BASIC
+
 ## component의 기본 구조
 >화면에만 집중한다. 
 
@@ -152,6 +153,149 @@ React view에서 사용자의 interacts가 발생할 때 view는 central dispatc
 * [Leveling Up with React: Redux](https://css-tricks.com/learning-react-redux/)
  * [Guide 3: Redux](https://github.com/bradwestfall/CSS-Tricks-React-Series/tree/master/guide-3-redux)  
 * [Counter Example : example react native redux](https://github.com/alinz/example-react-native-redux/tree/master/Counter)
+
+## STORE
+> Redux는 하나의 **store**에 모든 상태를 객체 트리 구조로 저장함.   
+
+```js
+{
+	visibilityFilter:'SHOW_ALL',
+	todos:[{
+		text:'Consider using Redux',
+		completed: true
+	}, {
+		text:'Keep all state in a single tree',
+		completed: false
+	}]
+```
+
+## ACTION
+>
+> 저장되어 있는 상태를 변화시키는 유일한 방법은 **액션 객체**를 전달하는 방법 뿐이다.  
+> **액션은** 애플리케이션에서 store로 보내는 데이터 묶음.  
+> 이 **액션은** ```store.dispatch()```를 통해 보낼 수 있다.  
+> 
+> 액션은 반드시 어떤 형태의 액션이 실행될지 나타내는 문자영형의 ```type``` 필드를 가져야 함.  
+> ```type```외에 액션 객체의 구조는 마음대로.
+
+```js
+store.dispatch({
+	type:'COMPLETE_TODO',
+	index:1
+});
+
+store.dispatch({
+	type:'SET_VISIBLITY_FILTER',
+	filter:'SHOW_COMPLETED'
+});
+```
+### 액션 생산자
+> action을 만드는 함수 
+
+```js
+function addTodo(text) {
+	return {
+		type:ADD_TODO,
+		text
+	}
+	
+}
+```
+
+> 액션을 보내려면 결과값을 ```dispatch()``` 함수에 넘기면 됨.  
+ 
+```js
+dispatch(addTodo(text));
+dispatch(completeTodo(index));
+```
+
+> 아니면 자동으로 액션을 보내주는 **바인드된 액션 생산자**를 만든다.   
+
+```js
+const boundAddTodo = (text)=>dispatch(addTodo(text));
+const boundCompleteTodo = (index)=>dispatch(completeTodo(index));
+```
+
+> ```dispatch()``` 함수를 스토어에서 ```store.dispatch()```로 바로 접근할 수 있지만, react-redux의 ```connect()```와 같은 헬퍼를 통해 접근할 것임.   
+> 여러 액션 생사자를 ```dispatch()```에 바인드하기 위해 ```bindActionCreateors()```를 사용할 수 도 있다. 
+
+
+### sample code
+
+```js
+/* 
+ * 액션 타입
+ * /
+export const ADD_TODO = 'ADD_TODO';
+export const COMPLETE_TODO = 'COMPLETE_TODO';
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+
+/*
+ * 다른 상수
+ * /
+export const VisibilityFilters = {
+	SHOW_ALL : 'SHOW_ALL',
+	SHOW_COMPLETED: 'SHOW_COMPLETED',
+	SHOW_ACTIVE: 'SHOW_ACTIVE'
+};
+
+/*
+ * 액션 생산자 
+ * /
+export function addTodo(text) {
+	return { type:ADD_TODO, text };
+}
+
+export function completeTodo(index) {
+	return { type:COMPLETE_TODO, index };
+}
+
+export function setVisibilityFiler(filter) {
+	return { type:SET_VISIBILITY_FILTER, filter };
+}
+
+```
+
+## Reducer
+
+> 액션에 의해 상태 트리가 어떻게 변화하는지를 지정하기 위해 **순수 리듀서**를 작성해야 함.  
+> 리듀서는 그저 _이전 상태와 액션을_ 받아 _다음 상태를 반환하는_ 순수 함수. 이전 상태를 변경하는 대신 새로운 상태 객체를 생성해서 반환해야 함. 
+
+```js
+function visibilityFilter(state='SHOW_ALL', action) {
+switch(action.type) {
+	case 'SET_VISIBILITY_FILTER':
+		return action.filter;
+	default:
+		return state;
+	}
+}
+
+function todos(state=[], action) {
+	switch (action.type) {
+		case 'ADD_TODO':
+			return [...state, {
+				text:action.text,
+				completed:false
+			}];
+		case 'COMPLETE_TODO':
+			return [
+				...state.slice(0, action.index), 
+				Object.assign({}, state[action.index], {
+					completed:true
+				}),
+				...state.slice(action.index+1)
+				];
+		default:
+			return state;
+	}
+}
+
+import { combineReducers, createStore }	from 'redux';
+let reducer = combindeReducers({visibilityFilter, todos});
+let store = cerateStore(reducer);				
+```
+
 
  
 ### Flux
