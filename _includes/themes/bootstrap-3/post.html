@@ -42,9 +42,6 @@
                         <dt class="phui-property-list-key">tags </dt>
                         <dd class="phui-property-list-value"><em>{% assign tags_list = page.tags %} {% include JB/tags_list %}</em> </dd>
                         <dt class='phui-property-list-key'>Related Post</dt>
-                        {% for tag in tags_list %}
-                        <dd class='phui-property-list-value'>{{ site.tags.tag }}</dd>
-                        {% endfor %}
                         {% endunless %}
                     </dl>
                 </div>
