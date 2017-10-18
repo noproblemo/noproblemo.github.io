@@ -135,3 +135,11 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+  defaults:
+    -
+      scope:
+        path:""
+        type:"posts"
+      value:
+        layout: "post"
+  
